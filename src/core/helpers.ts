@@ -18,6 +18,11 @@ export function toSentenseCase(input: string): string {
 }
 
 
+/**
+ * Tries to extract a meaningful error message from an axios error object.
+ * @param {any} e The error object from axios 
+ * @returns {string | null} The error message or null if not found
+ */
 export function getAxiosError(e: unknown) {
     const _e = e as AxiosError;
     let message = '';
