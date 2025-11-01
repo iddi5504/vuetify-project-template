@@ -87,6 +87,12 @@ export async function uploadFile(payload: FormData) {
     return await myApi.uploadFile(payload)
 }
 
+/**
+ * This function formats a date string into the API required format.
+ * @param dateValue Date string
+ * @returns Formatted date string
+ */
+
 export const dateApiFormat = (dateValue: string) => {
     const selectedDate = new Date(dateValue);
     const year = selectedDate.getFullYear();
