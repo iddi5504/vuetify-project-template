@@ -39,7 +39,12 @@ export function getAxiosError(e: unknown) {
     return message;
 }
 
-
+/**
+ * This function constructs a full URL for a file based on a base path and file ID.
+ * @param path The base url 
+ * @param id The id of the file
+ * @returns The full url of a file
+ */
 export function getIdPath(path: string, id: string) {
     return `${path}/${id}`
 }
