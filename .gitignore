@@ -6,7 +6,7 @@ node_modules
 .env.local
 .env.*.local
 
-.push.sh
+push.sh
 
 # Log files
 npm-debug.log*
