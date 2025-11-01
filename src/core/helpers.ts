@@ -50,6 +50,11 @@ export function getIdPath(path: string, id: string) {
 }
 
 
+/**
+ * This function constructs a full storage URL for a given file path.
+ * @param path The path of the file
+ * @returns the full url appended with the base storage url
+ */
 export function getStorageURL(path: string) {
     if (!path?.length) return ''
     return `${import.meta.env.VITE_BASE_STORAGE}/${path}`
