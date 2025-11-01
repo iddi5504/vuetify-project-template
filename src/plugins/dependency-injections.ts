@@ -25,10 +25,6 @@ export const initializeAppDependencies = (app: App) => {
 
     const authRepository = new AuthRepository(authAxiosClient)
 
-
-    /* 
-    Initialize Services
-    */
     const authService = new AuthService(authRepository)
 
     app.provide('authService', authService)
