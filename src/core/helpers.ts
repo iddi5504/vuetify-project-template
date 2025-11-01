@@ -1,6 +1,5 @@
 import type { AxiosError } from "axios";
 import { MyApi } from "./myApi";
-import { AxiosClient } from "@/client";
 import { client } from "@/plugins/dependency-injections";
 import { countries } from "@/constants";
 import vuetify from "@/plugins/vuetify";
