@@ -129,6 +129,10 @@ export const getCountryName = (code: string) => {
     return countries.find((country) => country.code === code)?.name ?? ''
 }
 
+/**
+ * This function toggles the application theme between dark and light mode.
+ * @param darkMode Wether the current app is in darkmode
+ */
 export const toggleTheme = (darkMode: boolean | null) => {
     vuetify.theme.global.name.value = darkMode ? 'dark' : 'light'
 }
