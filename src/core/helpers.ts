@@ -1,4 +1,3 @@
-import type { UploadPayload } from "@/types/api";
 import type { AxiosError } from "axios";
 import { MyApi } from "./myApi";
 import { AxiosClient } from "@/client";
@@ -54,7 +53,7 @@ export function debounce(func: Function, timeout: number) {
     }
 }
 
-export async function uploadFile(payload: UploadPayload) {
+export async function uploadFile(payload: FormData) {
     const myApi = new MyApi({
         axiosClient: client,
         path: '/files'
