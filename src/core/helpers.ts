@@ -64,7 +64,12 @@ export function getS3StorageFile(path: string) {
     return `${import.meta.env.VITE_S3_BUCKET}${path}`
 }
 
-// write a debounce function
+/**
+ * Debounce function to limit the rate at which a function can fire.
+ * @param func The function to debounce
+ * @param timeout Timeout in seconds
+ * @returns function
+ */
 export function debounce(func: Function, timeout: number) {
     let timer: number;
     return function (...args: any) {
