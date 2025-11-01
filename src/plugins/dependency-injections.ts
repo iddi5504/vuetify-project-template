@@ -22,10 +22,6 @@ export const storageAxiosClient = new AxiosClient(axios, {
 
 export const initializeAppDependencies = (app: App) => {
 
-
-
-    console.log('this was called');
-
     //   repos
     const authRepository = new AuthRepository(authAxiosClient)
 
