@@ -58,6 +58,10 @@ export type AuthPayload = {
 };
 
 export default class AuthRepository {
+  /**
+   * AuthRepository constructor, Takes in an Axios client instance
+   * @param client Axios client instance
+   */
   constructor(private client: AxiosClient) { }
   async login(payload: AuthPayload) {
     const res = await this.client.post<AuthResponse>("/login", payload);

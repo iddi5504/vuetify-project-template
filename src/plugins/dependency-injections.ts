@@ -22,9 +22,7 @@ export const storageAxiosClient = new AxiosClient(axios, {
 
 export const initializeAppDependencies = (app: App) => {
 
-    /*
-    Initialize and provide all dependencies here
-    */
+
     const authRepository = new AuthRepository(authAxiosClient)
 
 
