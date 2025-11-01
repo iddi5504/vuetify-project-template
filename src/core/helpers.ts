@@ -106,7 +106,11 @@ export const dateApiFormat = (dateValue: string) => {
 };
 
 
-
+/**
+ * This function formats a date string from the API into a human readable format.
+ * @param dateString Date string
+ * @returns Human readable date
+ */
 export function formatDateToFromAPI(dateString: string) {
     const date = new Date(dateString);
     const month = date.getMonth() + 1;
