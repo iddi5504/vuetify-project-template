@@ -120,6 +120,11 @@ export function formatDateToFromAPI(dateString: string) {
     return `${month}/${day}/${year}`;
 }
 
+/**
+ * This function retrieves the country name based on the country code.
+ * @param code The country code
+ * @returns Returns the country name
+ */
 export const getCountryName = (code: string) => {
     return countries.find((country) => country.code === code)?.name ?? ''
 }
