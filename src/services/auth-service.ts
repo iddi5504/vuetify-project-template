@@ -2,6 +2,12 @@ import type { AuthPayload, PasswordChangePayload, PasswordResetPayload } from "@
 import type AuthRepository from "@/repositories/auth-repository";
 import { useAuthStore } from "@/stores/authStore";
 export default class AuthService {
+
+    /**
+     * 
+     * @param authRepository Auth repository class instance
+     */
+
     constructor(private authRepository: AuthRepository) { }
     async login(payload: AuthPayload) {
         const authStore = useAuthStore()
