@@ -91,6 +91,5 @@ export const getCountryName = (code: string) => {
 }
 
 export const toggleTheme = (darkMode: boolean | null) => {
-    console.log(darkMode)
     vuetify.theme.global.name.value = darkMode ? 'dark' : 'light'
 }
