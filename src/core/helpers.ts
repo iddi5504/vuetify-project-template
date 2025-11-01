@@ -5,6 +5,11 @@ import { client } from "@/plugins/dependency-injections";
 import { countries } from "@/constants";
 import vuetify from "@/plugins/vuetify";
 
+/**
+ * 
+ * @param input The string in camelCase or snake_case to convert to readable sentence
+ * @returns {string} The transformed version of the sentence
+ */
 export function toSentenseCase(input: string): string {
     return input
         .split('_') // Split by underscores
